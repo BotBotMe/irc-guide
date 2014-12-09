@@ -12,15 +12,17 @@ a {
 /* Header */
 .header {
   text-align: center;
+  background: #3a3e3f;
 }
 
 .title {
+  margin-top: 0;
 }
 
 .header-text {
   padding: 20px;
   font-size: 22px;
-  color: #3a3e3f;
+  color: white;
   min-width: 250px;
 }
 
@@ -33,16 +35,49 @@ a {
 
 .bot-icon {
   margin: 40px auto;
-  border-radius: 5px;
   max-width: 150px;
   min-width: 150px;
   max-height: 150px;
   min-height: 150px;
 }
 
+.lightening {
+  opacity: 0;
+}
+
+/* logo animation in header */
+.lightening {
+  -webkit-animation: bolt 3s infinite;
+  animation: bolt 3s infinite;
+}
+
+@-webkit-keyframes bolt {
+  10% {
+    opacity: 1;
+  }
+  15% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+}
+
+@keyframes bolt {
+  10% {
+    opacity: 1;
+  }
+  15% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+}
+
+
 /* Questions */
 .question-section {
-  margin-top: 50px;
   padding: 60px 0;
   text-align: center;
   background: #ededed;
@@ -50,6 +85,8 @@ a {
 
 .icon {
   opacity: .7;
+  border: 6px solid #3a3e3f;
+  border-radius: 5px;
   width: 150px;
 }
 
@@ -81,11 +118,20 @@ a {
   text-align: center;
 }
 
+.answer {
+  margin-bottom: 60px;
+  padding-left: 50px;
+  padding-right: 50px;
+  line-height: 30px;
+}
+
 .answer h4 {
+  margin: 0;
   color: #ee632a;
 }
 
 .answer p {
+  margin: 0;
   color: #333333;
 }
 
@@ -148,34 +194,31 @@ a {
 
 /* Begin media queries */
 @media (min-width: 800px) { 
-  .contain-category {
-    padding: 20px;
-    background: white;
-    overflow: hidden;
-    width: 500px;
-  }
-  .icon {
-    float: left;
-    opacity: .4;
-  }
-  .contain-questions {
-    float: right;
-    width: 350px;
-  }
-  .contain-questions h2 {
-    text-align: left;
-    padding-left: 25px;
-  }
-  .contain-questions h4 {
-    padding: 0 10px 0 25px;
-    text-align: left;
-  }
-}
-
-@media (min-width: 1000px) {
   .question-section {
+    padding: 60px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
   }
-}
+  .contain-category {
+    margin: 30px 15px;
+    padding: 20px;
+    background: white;
+    border-radius: 4px;
+    overflow: hidden;
+    width: 280px;
+  }
+  .contain-questions {
+    width: 280px;
+  }
+  .contain-questions h4 {
+    padding: 0 15px;
+    text-align: left;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .icon {
+    border: none;
+    width: 100px;
+  }
 }
