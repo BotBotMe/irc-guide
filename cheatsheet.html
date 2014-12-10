@@ -66,8 +66,11 @@
     <div class="contain-category">
       <img class="icon" src="http://placehold.it/150x150">
       <div class="contain-questions">
-        <h2 class="category-title">Getting Started</h2>
-        <a href="#"><h4>How do I get started with IRC?</h4></a>
+        <h2 class="category-title">Before You Begin</h2>
+        <a href="#"><h4>What <em>is</em> IRC?</h4></a>
+        <a href="#"><h4>What are the benefits of using IRC?</h4></a>
+        <a href="#"><h4>What is Freenode?</h4></a>
+        <a href="#"><h4>What is BotBot's role in all this?</h4></a>
       </div>
     </div>
 
@@ -75,6 +78,7 @@
       <img class="icon" src="images/registericon.svg">
       <div class="contain-questions">
         <h2 class="category-title">Registration</h2>
+        <a href="#"><h4>How do I get started with IRC?</h4></a>
         <a href="#"><h4>How do I register my nickname?</h4></a>
       </div>
     </div>
@@ -96,6 +100,8 @@
         <a href="#"><h4>How do I set an “away” status?</h4></a>
         <a href="#"><h4>How do I convey an action?</h4></a>
         <a href="#"><h4>How do I change my nickname?</h4></a>
+        <a href="#"><h4>How do I ignore someone?</h4></a>
+        <a href="#"><h4></h4></a>
       </div>
     </div>
 
@@ -119,7 +125,7 @@
       </div>
     </div>
 
-    <div class="contain-category">
+    <!-- <div class="contain-category">
       <img class="icon" src="images/fileicon.svg">
       <div class="contain-questions">
         <h2 class="category-title">File Sharing</h2>
@@ -127,7 +133,7 @@
         <a href="#"><h4>This is a question?</h4></a>
         <a href="#"><h4>This is a question?</h4></a>
       </div>
-    </div>
+    </div> -->
 
     <div class="contain-category">
       <img class="icon" src="images/settingicon.svg">
@@ -154,7 +160,9 @@
       <div class="contain-questions">
         <h2 class="category-title">For Operators</h2>
         <a href="#"><h4>How do I set a channel topic?</h4></a>
-        <a href="#"><h4>This is a question?</h4></a>
+        <a href="#"><h4>How do I kick someone off the channel?</h4></a>
+        <a href="#"><h4>How do I restart a server?</h4></a>
+        <a href="#"><h4>How do I set a channel mode?</h4></a>
       </div>
     </div>
 
@@ -162,13 +170,37 @@
 
   <section class="answer-section">
 
-  <!-- Getting Started -->
+  <!-- Before you begin -->
+    <div class="answer">
+      <h4>What <em>is</em> IRC?</h4>
+      <p>Internet Relay Chat (IRC) transfers text messages in a chat room setting, or a “channel”. These chat rooms are accessed through IRC clients installed on the user’s system which communicate with the chat servers. Like other forms of chat we are used to these days, you can discuss topics in a group setting or private messaging.</p><br>
+      <p>This guide specifically focuses on the basics of navigating the freenode network and especially handy commands to get you chatting with servers quickly and efficiently.</p>
+    </div>
+
+    <div class="answer">
+      <h4>What are the benefits of using IRC?</h4>
+      <p>Those 80,000 Freenode users mentioned earlier know a lot about a lot of things and you can chat directly with them. This is a very powerful tool. You will finally be able to answer the age old question: “If you were in a room with <em>(insert awesome person’s name here)</em> right now, what would you ask him/her?” You are now in the room, the room just happens to have no walls and you haven’t had to leave your house.</p><br> 
+      <p>IRC is where the open source community gathers. You can connect directly with these people for support and information while also contributing to the mission. It allows you to be part of something that people are very passionate about and invested in.</p><br>
+      <p>Plus, it’s free and been around approximately forever. IRC is not going anywhere, and neither will you once you get started.</p>
+    </div>
+
+    <div class="answer">
+      <h4>What is Freenode?</h4>
+      <p><a href="https://freenode.net/">Freenode</a> is a specific IRC network that is used to discuss peer-directed projects consisting of over 80,000 users. These users join channels of interest to share their knowledge and seek out the knowledge of others on specific topics under their chosen nicknames.</p>
+    </div>
+
+    <div class="answer">
+      <h4>What is BotBot's role in all this?</h4>
+      <p>BotBot’s role in this beautiful open source world is to act as little butler, of sorts. Once requested by an operator and verified, BotBot will begin logging IRC channels. This can be so handy. All those intelligent discussions taking place that we discussed early will now be recorded and can be referenced for all of time. You won’t have to miss a thing!</p><br>
+      <p>He’s here to serve you and make allow you to make the most of your IRC experience. He logs for you night a day, year round. We programmed him not to get tired, so don’t worry about him. He loves working.</p>
+    </div>
+
+    <!-- Registration -->
     <div class="answer">
       <h4>How do I get started with IRC?</h4>
       <p>That's a great question! We've actually written a guide on that as well, you can <a href="https://botbot.me/how-to-setup-irc-channel/">check it out here.</a></p>
     </div>
 
-    <!-- Registration -->
     <div class="answer">
       <h4>How do I register my nickname?</h4>
       <p>Luckily the people over at <a href="https://freenode.net/">freenode.net</a> have answered this question <a href="https://freenode.net/faq.shtml#nicksetup">in beautiful detail here</a>.</p>
@@ -206,8 +238,20 @@
 
     <div class="answer">
       <h4>How do I change my nickname?</h4>
-      <p>/nick newnickname <em>(9 character max)</em></p>
+      <p>/nick newnickname</p>
       <p class="example">/nick </p>
+    </div>
+
+    <div class="answer">
+      <h4>How do I ignore someone?</h4>
+      <p>/ignore nickname 3</p>
+      <p class="example">/ignore lincolnloop 3 <em>(please don't though!)</em></p>
+    </div>
+
+    <div class="answer">
+      <h4></h4>
+      <p></p>
+      <p class="example"></p>
     </div>
 
     <!-- User Navigaton -->
@@ -241,11 +285,18 @@
       <p class="example">/topic #lincolnloop Lincoln Loop Public Chat https://botbot.me/freenode/lincolnloop/</p>
     </div>
 
+    <div class="answer">
+      <h4>How do I kick someone off the channel?</h4>
+      <p>/kick username</p>
+      <p class="example">/kick lincolnloop <em>(please don't actually do this)</em></p>
+    </div>
+
   </section>
 
-  <section class="pdf-section">
+  <!-- <section class="pdf-section">
     <a class="get-pdf" href="#">Grab PDF Version</a>
   </section>
+  -->
 
   <footer class="footer">
     <div class="contain-social">
