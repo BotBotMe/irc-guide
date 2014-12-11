@@ -92,6 +92,7 @@
         <a href="#"><h4>How do I leave a channel?</h4></a>
         <a href="#"><h4>How do I leave all channels that I am in?</h4></a>
         <a href="#"><h4>How do I clear text in my current window or all windows?</h4></a>
+        <a href="#"><h4>What do all the different channel modes mean?</h4></a>
       </div>
     </div>
 
@@ -103,6 +104,7 @@
         <a href="#"><h4>How do I convey an action?</h4></a>
         <a href="#"><h4>How do I change my nickname?</h4></a>
         <a href="#"><h4>How do I ignore someone?</h4></a>
+        <a href="#"><h4>What are user modes and how do I set mine?</h4></a>
       </div>
     </div>
 
@@ -237,6 +239,11 @@
       <p>/clear <em>or</em> /clearall</p>
     </div>
 
+    <div class="answer">
+      <h4>What do all the different channel modes mean?</h4>
+      <p>Channel modes are set by the channel operator and helps manage the overall functioning of the channel. You can find an incredibly handy <a href="http://docs.dal.net/docs/modes.html#2">list of modes and their meanings here</a>.</p>
+    </div>
+
     <!-- User Actions -->
     <div class="answer">
       <h4>How do I set an away status?</h4>
@@ -259,7 +266,15 @@
     <div class="answer">
       <h4>How do I ignore someone?</h4>
       <p>/ignore nickname 3</p>
-      <p class="example">/ignore lincolnloop 3 <em>(please don't though!)</em></p>
+      <p class="example">/ignore botbot 3</p>
+    </div>
+
+    <div class="answer">
+      <h4>What are user modes and how do I set mine?</h4>
+      <p>User modes <em>(or umodes)</em> are not to be confused with channel modes, which can only be set by operators. A user mode allows you to specify a number of configurations while in IRC, like how easy it should be for other people to find you.</p>
+      <p>You can find a <a href="http://docs.dal.net/docs/modes.html#3">list of user modes and their meanings here</a>.</p>
+      <p>User modes are usually set as follows: /mode nickname +/- mode(s)</p>
+      <p class="example">/mode botbot -k</p>
     </div>
 
     <!-- User Navigaton -->
@@ -271,7 +286,7 @@
 
     <div class="answer">
       <h4>How do I know if someone is an OP?</h4>
-      <p>When you join a channel it will display which user set the channel topic, in most cases this will be the username of the operator. In addition, the operator will usually have a special symbol by their username in the list of users.</p>
+      <p>When you join a channel it will display which user set the channel topic, in most cases this will be the username of the operator. In addition, the operator will usually have a, "@" symbol by their username in the list of users.</p>
       <p>You can also find out who all the operators in a room are........</p>
       <p class="example"></p>
     </div>
@@ -285,7 +300,7 @@
     <div class="answer">
       <h4>How do I change my nickname?</h4>
       <p>/nick newnickname <em>(9 character max)</em></p>
-      <p class="example">/nick </p>
+      <p class="example">/nick botbottoo</p>
     </div>
 
     <!-- For Operators -->
@@ -298,7 +313,15 @@
     <div class="answer">
       <h4>How do I kick someone off the channel?</h4>
       <p>/kick username</p>
-      <p class="example">/kick lincolnloop <em>(please don't actually do this)</em></p>
+      <p class="example">/kick botbot</p>
+    </div>
+
+    <div class="answer">
+      <h4>How do I set a channel mode?</h4>
+      <p>/mode #channel +/- mode(s) <em>set parameters</em></p>
+      <p><em>Note: only certain modes require additional parameters.</em></p>
+      <p>You can find an incredibly handy <a href="http://docs.dal.net/docs/modes.html#2">list of modes and their meanings here</a>.</p>
+      <p class="example">/mode #lincolnloop -ps</p>
     </div>
 
     <div class="answer">
