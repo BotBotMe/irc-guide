@@ -80,6 +80,7 @@
         <h2 class="category-title">Registration</h2>
         <a href="#"><h4>How do I get started with IRC?</h4></a>
         <a href="#"><h4>How do I register my nickname?</h4></a>
+        <a href="#"><h4>Any general etiquette tips before I get started?</h4></a>
       </div>
     </div>
 
@@ -90,6 +91,7 @@
         <a href="#"><h4>How do I join a channel?</h4></a>
         <a href="#"><h4>How do I leave a channel?</h4></a>
         <a href="#"><h4>How do I leave all channels that I am in?</h4></a>
+        <a href="#"><h4>How do I clear text in my current window or all windows?</h4></a>
       </div>
     </div>
 
@@ -101,7 +103,6 @@
         <a href="#"><h4>How do I convey an action?</h4></a>
         <a href="#"><h4>How do I change my nickname?</h4></a>
         <a href="#"><h4>How do I ignore someone?</h4></a>
-        <a href="#"><h4></h4></a>
       </div>
     </div>
 
@@ -109,9 +110,9 @@
       <img class="icon" src="images/usernav.svg">
       <div class="contain-questions">
         <h2 class="category-title">User Navigation</h2>
-        <a href="#"><h4>What does an OP (operator) do?</h4></a>
-        <a href="#"><h4>How do I know if someone is an OP?</h4></a>
-        <a href="#"><h4>This is a question?</h4></a>
+        <a href="#"><h4>What does a channel OP (operator) do?</h4></a>
+        <a href="#"><h4>How do I know if someone is a channel OP?</h4></a>
+        <a href="#"><h4>What does a user having "voice" mean?</h4></a>
       </div>
     </div>
 
@@ -135,7 +136,7 @@
       </div>
     </div> -->
 
-    <div class="contain-category">
+    <!-- <div class="contain-category">
       <img class="icon" src="images/settingicon.svg">
       <div class="contain-questions">
         <h2 class="category-title">Settings</h2>
@@ -153,16 +154,18 @@
         <a href="#"><h4>How do I access the Help menu?</h4></a>
         <a href="#"><h4>This is a question?</h4></a>
       </div>
-    </div>
+    </div> -->
 
     <div class="contain-category">
       <img class="icon" src="images/operator.svg">
       <div class="contain-questions">
         <h2 class="category-title">For Operators</h2>
+        <a href="#"><h4>What are the general guidelines for a channel OP?</h4></a>
         <a href="#"><h4>How do I set a channel topic?</h4></a>
         <a href="#"><h4>How do I kick someone off the channel?</h4></a>
         <a href="#"><h4>How do I restart a server?</h4></a>
         <a href="#"><h4>How do I set a channel mode?</h4></a>
+        <a href="#"><h4>How do I remove someone's voice status?</h4></a>
       </div>
     </div>
 
@@ -173,14 +176,14 @@
   <!-- Before you begin -->
     <div class="answer">
       <h4>What <em>is</em> IRC?</h4>
-      <p>Internet Relay Chat (IRC) transfers text messages in a chat room setting, or a “channel”. These chat rooms are accessed through IRC clients installed on the user’s system which communicate with the chat servers. Like other forms of chat we are used to these days, you can discuss topics in a group setting or private messaging.</p><br>
+      <p>Internet Relay Chat (IRC) transfers text messages in a chat room setting, or a “channel”. These chat rooms are accessed through IRC clients installed on the user’s system which communicate with the chat servers. Like other forms of chat we are used to these days, you can discuss topics in a group setting or private messaging.</p>
       <p>This guide specifically focuses on the basics of navigating the freenode network and especially handy commands to get you chatting with servers quickly and efficiently.</p>
     </div>
 
     <div class="answer">
       <h4>What are the benefits of using IRC?</h4>
-      <p>Those 80,000 Freenode users mentioned earlier know a lot about a lot of things and you can chat directly with them. This is a very powerful tool. You will finally be able to answer the age old question: “If you were in a room with <em>(insert awesome person’s name here)</em> right now, what would you ask him/her?” You are now in the room, the room just happens to have no walls and you haven’t had to leave your house.</p><br> 
-      <p>IRC is where the open source community gathers. You can connect directly with these people for support and information while also contributing to the mission. It allows you to be part of something that people are very passionate about and invested in.</p><br>
+      <p>Those 80,000 Freenode users mentioned earlier know a lot about a lot of things and you can chat directly with them. This is a very powerful tool. You will finally be able to answer the age old question: “If you were in a room with <em>(insert awesome person’s name here)</em> right now, what would you ask him/her?” You are now in the room, the room just happens to have no walls and you haven’t had to leave your house.</p>
+      <p>IRC is where the open source community gathers. You can connect directly with these people for support and information while also contributing to the mission. It allows you to be part of something that people are very passionate about and invested in.</p>
       <p>Plus, it’s free and been around approximately forever. IRC is not going anywhere, and neither will you once you get started.</p>
     </div>
 
@@ -191,7 +194,7 @@
 
     <div class="answer">
       <h4>What is BotBot's role in all this?</h4>
-      <p>BotBot’s role in this beautiful open source world is to act as little butler, of sorts. Once requested by an operator and verified, BotBot will begin logging IRC channels. This can be so handy. All those intelligent discussions taking place that we discussed early will now be recorded and can be referenced for all of time. You won’t have to miss a thing!</p><br>
+      <p>BotBot’s role in this beautiful open source world is to act as little butler, of sorts. Once requested by an operator and verified, BotBot will begin logging IRC channels. This can be so handy. All those intelligent discussions taking place that we discussed early will now be recorded and can be referenced for all of time. You won’t have to miss a thing!</p>
       <p>He’s here to serve you and make allow you to make the most of your IRC experience. He logs for you night a day, year round. We programmed him not to get tired, so don’t worry about him. He loves working.</p>
     </div>
 
@@ -204,6 +207,12 @@
     <div class="answer">
       <h4>How do I register my nickname?</h4>
       <p>Luckily the people over at <a href="https://freenode.net/">freenode.net</a> have answered this question <a href="https://freenode.net/faq.shtml#nicksetup">in beautiful detail here</a>.</p>
+    </div>
+
+    <div class="answer">
+      <h4>Any general etiquette tips before I get started?</h4>
+      <p>In order to fully experience the true benefits of IRC one must adhere to a basic protocol concerning procedure and conduct.</p><br>
+      <p>Lucky for us, the folks over at #Beginner have created a <a href="http://www.ircbeginner.com/ircinfo/etiquette.html">really great summary of such "unspoken" but suggested rules</a>.</p>
     </div>
 
     <!-- Channel Navigation -->
@@ -221,6 +230,11 @@
     <div class="answer">
       <h4>How do I leave all channels that I am in?</h4>
       <p>/partall</p>
+    </div>
+
+    <div class="answer">
+      <h4>How do I clear text in my current channel window or all windows?</h4>
+      <p>/clear <em>or</em> /clearall</p>
     </div>
 
     <!-- User Actions -->
@@ -248,22 +262,18 @@
       <p class="example">/ignore lincolnloop 3 <em>(please don't though!)</em></p>
     </div>
 
-    <div class="answer">
-      <h4></h4>
-      <p></p>
-      <p class="example"></p>
-    </div>
-
     <!-- User Navigaton -->
     <div class="answer">
-      <h4>What does an OP (operator) do?</h4>
-      <p>An IRC operator...</p>
+      <h4>What does a channel OP (operator) do?</h4>
+      <p>A channel operator is the channel's chief administrator. This individual can set the channel topic, approve channel logging with BotBot, set the channel mode, oversee user interactions and ban certain users when necessary, and provide general channel maintenance.</p>
+      <p>A channel operator is not to be confused with an IRC operator; IRC operators enforce network, rather than channel, rules.</p>
     </div>
 
     <div class="answer">
       <h4>How do I know if someone is an OP?</h4>
-      <p>/away set message</p>
-      <p class="example">/away need coffee!</p>
+      <p>When you join a channel it will display which user set the channel topic, in most cases this will be the username of the operator. In addition, the operator will usually have a special symbol by their username in the list of users.</p>
+      <p>You can also find out who all the operators in a room are........</p>
+      <p class="example"></p>
     </div>
 
     <div class="answer">
@@ -289,6 +299,12 @@
       <h4>How do I kick someone off the channel?</h4>
       <p>/kick username</p>
       <p class="example">/kick lincolnloop <em>(please don't actually do this)</em></p>
+    </div>
+
+    <div class="answer">
+      <h4>How do I remove someone's voice status?</h4>
+      <p>/devoice nickname</p>
+      <p class="example">/devoice </p>
     </div>
 
   </section>

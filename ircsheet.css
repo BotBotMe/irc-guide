@@ -1,3 +1,4 @@
+/* General */
 body {
   margin: 0;
   padding: 0;
@@ -7,6 +8,10 @@ body {
 a {
   text-decoration: none;
   color: #0088cc;
+}
+
+p {
+  padding-top: 15px;
 }
 
 /* Header */
@@ -221,8 +226,11 @@ a {
     border: none;
     width: 100px;
   }
+}
+
+@media (min-width: 1000px) { 
   .answer-section {
     margin: 0 auto;
-      width: 800px;
+    width: 900px;
   }
 }
