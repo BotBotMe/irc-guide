@@ -64,7 +64,7 @@
   <section class="question-section">
 
     <div class="contain-category">
-      <img class="icon" src="http://placehold.it/150x150">
+      <img class="icon" src="images/beforebegin.svg" />
       <div class="contain-questions">
         <h2 class="category-title">Before You Begin</h2>
         <a href="#"><h4>What <em>is</em> IRC?</h4></a>
@@ -116,6 +116,8 @@
         <a href="#"><h4>What does a channel OP (operator) do?</h4></a>
         <a href="#"><h4>How do I know if someone is a channel OP?</h4></a>
         <a href="#"><h4>What does a user having "voice" mean?</h4></a>
+        <a href="#"><h4>How do I see more information about a user?</h4></a>
+        <a href="#"><h4>How can I know if a specific user signs on?</h4></a>
       </div>
     </div>
 
@@ -165,6 +167,18 @@
         <h2 class="category-title">For Operators</h2>
         <a href="#"><h4>What are the general guidelines for a channel OP?</h4></a>
         <a href="#"><h4>How do I set a channel topic?</h4></a>
+        <a href="#"><h4>How do I kick someone off the channel?</h4></a>
+        <a href="#"><h4>How do I restart a server?</h4></a>
+        <a href="#"><h4>How do I set a channel mode?</h4></a>
+        <a href="#"><h4>How do I remove someone's voice status?</h4></a>
+      </div>
+    </div>
+
+    <div class="contain-category">
+      <img class="icon" src="images/chanserv.svg">
+      <div class="contain-questions">
+        <h2 class="category-title">ChanServ</h2>
+        <a href="#"><h4>What is ChanServ?</h4></a>
         <a href="#"><h4>How do I kick someone off the channel?</h4></a>
         <a href="#"><h4>How do I restart a server?</h4></a>
         <a href="#"><h4>How do I set a channel mode?</h4></a>
@@ -302,6 +316,18 @@
     <div class="answer">
       <h4>What does a user having "voice" mean?</h4>
       <p>Channel operators can select certain users to "have a voice". This "voiced" user will have a "+" symbol by their user name and be able to speak when the +m mode is set. This mode signals a <em>moderated</em> channel, in which only the OP (@) and voices (+) can send messages to the channel while all other messages are blocked.</p>
+    </div>
+
+    <div class="answer">
+      <h4>How do I see more information about a user?</h4>
+      <p>/whois nickname</p>
+      <p class="example">/whois botbot</p>
+    </div>
+
+    <div class="answer">
+      <h4>How can I know if a specific user signs on?</h4>
+      <p>/notify nickname</p>
+      <p class="example">/notify botbot</p>
     </div>
 
     <!-- For Operators -->

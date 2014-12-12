@@ -229,13 +229,6 @@ p {
     border: none;
     width: 100px;
   }
-  .place-hold {
-    display: inline-block;
-  }
-  .full-bot {
-    margin: 60px 0 0 -10px;
-    opacity: .2;
-  }
 }
 
 @media (min-width: 1000px) { 
@@ -244,3 +237,14 @@ p {
     width: 900px;
   }
 }
+
+@media (min-width: 1165px) { 
+  .place-hold {
+    display: inline-block;
+  }
+  .full-bot {
+    margin: 60px 0 0 -10px;
+    opacity: .3;
+  }
+}
+
