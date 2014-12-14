@@ -10,10 +10,6 @@ a {
   color: #0088cc;
 }
 
-p {
-  padding-top: 15px;
-}
-
 /* Header */
 .header {
   text-align: center;
@@ -80,10 +76,9 @@ p {
   }
 }
 
-
 /* Questions */
 .question-section {
-  padding: 60px 0;
+  padding: 60px 30px;
   text-align: center;
   background: #ededed;
 }
@@ -107,13 +102,17 @@ p {
   margin: 60px auto;
 }
 
-.contain-questions h4:before {
-  content: "Q. ";
+.question-list {
+  margin: 0;
+  padding: 0;
 }
 
-.contain-questions h4 {
-  font-family: 'Droid Serif', serif;
-  padding: 0 70px;
+.question-list .question {
+  padding: 10px 0;
+  list-style-type: none;
+  font-family: 'Droid Sans', sans-serif;
+  text-align: center;
+  font-weight: bold;
   line-height: 29px;
 }
 
@@ -133,14 +132,16 @@ p {
   line-height: 30px;
 }
 
-.answer h4 {
+.answer .repeat-question {
   margin: 0;
   color: #ee632a;
 }
 
-.answer p {
+.answer .answer-details {
+  padding-top: 15px;
   margin: 0;
   color: #333333;
+  font-size: 16px;
 }
 
 .answer-section .example {
@@ -149,28 +150,6 @@ p {
 
 .example:before {
   content: "Example: ";
-}
-
-/* PDF Section */
-.pdf-section {
-  padding-top: 120px;
-  background: #ededed;
-  text-align: center;
-  height: 150px;
-}
-
-.get-pdf {
-  padding: 10px 15px;
-  background: #2d9cd8;
-  color: white;
-  font-size: 20px;
-  border: 4px solid #2d9cd8;
-  border-radius: 4px;
-}
-
-.get-pdf:hover {
-  background: #ee632a;
-  border-color: #ee632a;
 }
 
 /* Footer */
@@ -219,15 +198,22 @@ p {
   .contain-questions {
     width: 280px;
   }
-  .contain-questions h4 {
+  .question-list {
     padding: 0 15px;
+  }
+  .question-list .question {
     text-align: left;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 18px;
   }
   .icon {
     border: none;
     width: 100px;
+  }
+  .answer .answer-details {
+    font-size: 19px;
+  }
+  .answer .repeat-question {
+    font-size: 21px;
   }
 }
 
