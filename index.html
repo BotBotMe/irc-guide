@@ -82,7 +82,7 @@
     <div class="contain-category">
       <img class="icon" src="images/registericon.svg" alt="Registration/clipboard icon" />
       <div class="contain-questions">
-        <h2 class="category-title">Registration</h2>
+        <h2 class="category-title">User Registration</h2>
         <ul class="question-list">
           <a href="#2-1"><li class="question">How do I get started with IRC?</li></a>
           <a href="#2-2"><li class="question">How do I register my nickname?</li></a>
@@ -170,6 +170,10 @@
         <h2 class="category-title">ChanServ</h2>
         <ul class="question-list">
           <a href="#8-1"><li class="question">What is ChanServ?</li></a>
+          <a href="#8-2"><li class="question">How do I get general help info from the server?</li></a>
+          <a href="#8-3"><li class="question">How do I know if my channel topic is appropriate for freenode?</li></a>
+          <a href="#8-4"><li class="question">How do I register a channel?</li></a>
+          <a href="#8-5"><li class="question">How do I customize my channel with ChanServ?</li></a>
         </ul>
       </div>
     </div>
@@ -204,7 +208,7 @@
       <p class="answer-details"><a href="https://freenode.net/">Freenode</a> is a specific IRC network that is used to discuss peer-directed projects consisting of over 80,000 users. These users join channels of interest to share their knowledge and seek out the knowledge of others on specific topics under their chosen nicknames.</p>
     </div>
 
-    <div class="answer" id="1-3">
+    <div class="answer" id="1-4">
       <h4 class="repeat-question">What's an IRC client and how do I get one?</h4>
       <p class="answer-details">IRC clients are programs that allow you to access the IRC servers.</p>
       <p class="answer-details">Client software generally exists across various operating systems, and even within some web browsers. There are a number of clients for both Mac and Windows users and well as mobile. The pretty extensive list <a href="http://en.wikipedia.org/wiki/Comparison_of_Internet_Relay_Chat_clients">can be viewed here</a> and sorted by system. Once selected, you will then want to install the client.</p>
@@ -224,7 +228,7 @@
 
     <div class="answer" id="2-2">
       <h4 class="repeat-question">How do I register my nickname?</h4>
-      <p class="answer-details">Luckily the people over at <a href="https://freenode.net/">freenode.net</a> have answered this question <a href="https://freenode.net/faq.shtml#nicksetup">in beautiful detail here</a>.</p>
+      <p class="answer-details">Nickname registration is done through the NickServ bot. Luckily for us the people over at <a href="https://freenode.net/">freenode.net</a> have answered this NickServ registration question <a href="https://freenode.net/faq.shtml#nicksetup">in beautiful detail here</a>.</p>
     </div>
 
     <div class="answer" id="2-3">
@@ -409,7 +413,34 @@
     <!-- ChanServ -->
     <div class="answer" id="8-1">
       <h4 class="repeat-question">What is ChanServ?</h4>
-      <p class="answer-details"></p>
+      <p class="answer-details">ChanServ is a "Channel Service" bot. This bot governs the creation and operation of channels on the network and allows any user with a registered nickname to create a channel.</p>
+      <p class="answer-details">ChanServ also helps protect channel operators from channel take overs by allowing the operator to not always have to be in the channel to maintain their status and helps run for the channel alongside the operator.</p>
+    </div>
+
+    <div class="answer" id="8-2">
+      <h4 class="repeat-question">How do I get general help info from the server?</h4>
+      <p class="answer-details">/msg ChanServ HELP <em>or</em> /msg ChanServ HELP [papameters]</p>
+      <p class="answer-details example"><kbd>/msg ChanServ HELP REGISTER</kbd></p>
+    </div>
+
+    <div class="answer" id="8-3">
+      <h4 class="repeat-question">How do I know if my channel topic is approriate for freenode?</h4>
+      <p class="answer-details">That's a fantastic question! The helpful staff over at freenode have put together a list of <a href="http://freenode.net/policy.shtml#ontopic">on-topic uses</a> and <a href="http://freenode.net/policy.shtml#offtopic">off-topic uses</a> of the network.</p>
+      <p class="answer-details">Taking a look at the <a href="http://freenode.net/philosophy.shtml">freenode philosophy</a> should also help you determine whether or not your potential channel is acceptable on freenode specifically.</p>
+
+    </div>
+
+    <div class="answer" id="8-4">
+      <h4 class="repeat-question">How do I register a channel?</h4>
+      <p class="answer-details">freenode has you covered when it's time to register your channel, walking through the <a href="https://blog.freenode.net/2008/04/registering-a-channel-on-freenode/">channel registration process in detail</a> on their staff blog. Before you start, however, you will want to make sure your nickname is <a href="http://freenode.net/faq.shtml#nicksetup">registered with NickServ</a>.</p>
+    </div>
+
+    <div class="answer" id="8-5">
+      <h4 class="repeat-question">How do I customize my channel with ChanServ?</h4>
+      <p class="answer-details">ChanServ allows operators to set their channels up to do certain things automatically. This "custimization" is done through matching a certain feature with a numbered level through the use of the ChanServ levels command (<kbd>/cs levels</kbd>).</p>
+      <p class="answer-details">To view a list of levels for your channel: /cs levels #channel list</p>
+      <p class="answer-details">To change levels: /cs levels #channel set option level</p>
+      <p class="answer-details">You can find a list of default ChanServ <a href="http://wiki.swiftirc.net/index.php?title=ChanServ_Levels">levels and their descriptions here</a>.</p>
     </div>
 
   </div>
