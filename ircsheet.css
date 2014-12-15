@@ -144,12 +144,32 @@ a {
   font-size: 16px;
 }
 
+.answer .answer-details:last-of-type {
+  padding-bottom: 15px;
+}
+
 .answer-section .example {
   color: gray;
+  word-break: break-word;
+  -ms-word-break: break-all;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+   -moz-hyphens: auto;
 }
 
 .example:before {
   content: "Example: ";
+}
+
+/* Back to top  */
+.to-top {
+  font-size: 16px;
+  opacity: .5;
+}
+
+.to-top .fa-arrow-circle-up {
+  margin-left: 15px;
+  font-size: 20px;
 }
 
 /* Footer */
