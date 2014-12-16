@@ -229,6 +229,7 @@ a:hover {
   .question-list .question {
     text-align: left;
     font-size: 18px;
+    font-weight: normal;
     border-bottom: 2px solid #ededed;
   }
   .question-list .question:last-child {
