@@ -10,6 +10,10 @@ a {
   color: #0088cc;
 }
 
+a:hover {
+  color: #ee632a;
+}
+
 /* Header */
 .header {
   text-align: center;
@@ -90,10 +94,6 @@ a {
   width: 150px;
 }
 
-.question-section a:hover {
-  color: #ee632a;
-}
-
 .question-section .category-title {
   color: #ee632a;
 }
@@ -113,7 +113,7 @@ a {
   font-family: 'Droid Sans', sans-serif;
   text-align: center;
   font-weight: bold;
-  line-height: 29px;
+  line-height: 25px;
 }
 
 .place-hold {
@@ -172,6 +172,11 @@ a {
   font-size: 20px;
 }
 
+.to-top:hover {
+  color: #0088cc;
+  opacity: 1;
+}
+
 /* Footer */
 .footer {
   padding: 20px;
@@ -224,16 +229,20 @@ a {
   .question-list .question {
     text-align: left;
     font-size: 18px;
+    border-bottom: 2px solid #ededed;
+  }
+  .question-list .question:last-child {
+    border-bottom: none;
   }
   .icon {
     border: none;
     width: 100px;
   }
   .answer .answer-details {
-    font-size: 19px;
+    font-size: 18px;
   }
   .answer .repeat-question {
-    font-size: 21px;
+    font-size: 20px;
   }
 }
 
