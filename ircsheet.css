@@ -256,8 +256,11 @@ a:hover {
   .question-section {
     padding: 60px;
     display: flex;
+    display: -webkit-flex;
     flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
     justify-content: space-around;
+    -webkit-justify-content: space-around;
   }
   .contain-category {
     margin: 30px 15px;
